@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (5.4.4)
+  - AlamofireNetworkActivityLogger (3.4.0):
+    - Alamofire (~> 5.4.0)
+  - KeychainAccess (4.2.2)
+  - RxAlamofire (6.1.1):
+    - RxAlamofire/Core (= 6.1.1)
+  - RxAlamofire/Core (6.1.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 6.0)
+  - RxSwift (6.6.0)
+  - SwiftDate (6.0.3)
+  - Swinject (2.8.3)
+
+DEPENDENCIES:
+  - AlamofireNetworkActivityLogger
+  - KeychainAccess
+  - RxAlamofire
+  - RxSwift
+  - SwiftDate (~> 6.0.3)
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireNetworkActivityLogger
+    - KeychainAccess
+    - RxAlamofire
+    - RxSwift
+    - SwiftDate
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  AlamofireNetworkActivityLogger: 162ab8aee00e6267a4304d7cc134e13ccfe3bcc5
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  RxAlamofire: beb75a1c452d0de225651db4903f5d29d034a620
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  SwiftDate: 8d4f14bf1ef68e95094511504856547bf9e3e1a6
+  Swinject: 893c9a543000ac2f10ee4cbaf0933c6992c935d5
+
+PODFILE CHECKSUM: 2891d7a89d237ecb44c52ee909ac1cb50a8814b3
+
+COCOAPODS: 1.14.2

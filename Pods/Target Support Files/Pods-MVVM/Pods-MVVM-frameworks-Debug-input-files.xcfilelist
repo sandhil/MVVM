@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-MVVM/Pods-MVVM-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.framework
+${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework
+${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework
+${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework

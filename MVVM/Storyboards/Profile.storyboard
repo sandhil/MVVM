@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="Y6W-OH-hqX" customClass="ProfileViewController" customModule="MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYo-HH-stJ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="275"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FM2-7C-DPj">
+                                        <rect key="frame" x="166.66666666666666" y="31" width="60" height="58.666666666666671"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="82O-gJ-sS8"/>
+                                            <constraint firstAttribute="width" constant="60" id="kWa-o9-G0C"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gn0-sZ-7gO">
+                                        <rect key="frame" x="24" y="106" width="345" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="johndoe@unknown.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GT4-Ac-7HI">
+                                        <rect key="frame" x="24" y="135" width="345" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42J-aP-ckh">
+                                        <rect key="frame" x="332" y="4" width="57" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="pip.exit" catalog="system"/>
+                                        <connections>
+                                            <action selector="logoutButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="r44-R1-ca4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="FM2-7C-DPj" firstAttribute="centerX" secondItem="AYo-HH-stJ" secondAttribute="centerX" id="3qg-v5-I7n"/>
+                                    <constraint firstItem="GT4-Ac-7HI" firstAttribute="top" secondItem="Gn0-sZ-7gO" secondAttribute="bottom" constant="8" id="C3f-OG-0iM"/>
+                                    <constraint firstItem="Gn0-sZ-7gO" firstAttribute="leading" secondItem="AYo-HH-stJ" secondAttribute="leading" constant="24" id="PWa-FL-Tyr"/>
+                                    <constraint firstItem="GT4-Ac-7HI" firstAttribute="leading" secondItem="AYo-HH-stJ" secondAttribute="leading" constant="24" id="Tia-KY-Qkh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gn0-sZ-7gO" secondAttribute="trailing" constant="24" id="XPY-YC-53a"/>
+                                    <constraint firstAttribute="trailing" secondItem="42J-aP-ckh" secondAttribute="trailing" constant="4" id="b38-9q-QP1"/>
+                                    <constraint firstItem="FM2-7C-DPj" firstAttribute="top" secondItem="AYo-HH-stJ" secondAttribute="top" constant="30" id="fE3-CJ-U1I"/>
+                                    <constraint firstItem="Gn0-sZ-7gO" firstAttribute="top" secondItem="FM2-7C-DPj" secondAttribute="bottom" constant="16" id="gAc-eg-hmn"/>
+                                    <constraint firstAttribute="width" secondItem="AYo-HH-stJ" secondAttribute="height" multiplier="1:0.7" id="gR1-94-TvU"/>
+                                    <constraint firstAttribute="trailing" secondItem="GT4-Ac-7HI" secondAttribute="trailing" constant="24" id="iOz-Rk-RSk"/>
+                                    <constraint firstItem="42J-aP-ckh" firstAttribute="top" secondItem="AYo-HH-stJ" secondAttribute="top" constant="4" id="nQI-Mv-E1R"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AYo-HH-stJ" secondAttribute="trailing" id="T1p-eI-lxd"/>
+                            <constraint firstItem="AYo-HH-stJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="okk-47-oa0"/>
+                            <constraint firstItem="AYo-HH-stJ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="wCZ-xH-meE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="pip.exit" catalog="system" width="128" height="98"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
