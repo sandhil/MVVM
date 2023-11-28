@@ -26,7 +26,9 @@ class MVVMCoordinator {
     func navigateToHome() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let tabbarController = storyboard.instantiateViewController(withIdentifier: "TabbarController") as! TabbarController
+        
         let navigationController = UINavigationController(rootViewController: tabbarController)
+        navigationController.isNavigationBarHidden = true
         window?.rootViewController = navigationController
     }
     
@@ -34,6 +36,7 @@ class MVVMCoordinator {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let signInController = storyboard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
         let navigationController = UINavigationController(rootViewController: signInController)
+        navigationController.isNavigationBarHidden = true
         window?.rootViewController = navigationController
     }
 }

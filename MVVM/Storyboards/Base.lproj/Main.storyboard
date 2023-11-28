@@ -17,20 +17,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QTS-WV-sHY">
-                                <rect key="frame" x="24" y="358.66666666666669" width="345" height="135"/>
+                                <rect key="frame" x="24" y="335" width="345" height="182"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wOA-W3-2di">
-                                        <rect key="frame" x="0.0" y="0.0" width="345" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="257-pI-2Mj"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s01-gy-SmV">
-                                        <rect key="frame" x="0.0" y="50.333333333333314" width="345" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="66" width="345" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="wKH-Ba-ALa"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBi-eK-OrL">
-                                        <rect key="frame" x="0.0" y="100.66666666666663" width="345" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="132" width="345" height="50"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Log In"/>
                                         <connections>
@@ -63,6 +69,7 @@
             <objects>
                 <tabBarController storyboardIdentifier="TabbarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v1B-rm-Jj0" customClass="TabbarController" customModule="MVVM" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="QLy-7z-p3I"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uhv-2x-8rh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -81,10 +88,11 @@
         <!--Home-->
         <scene sceneID="PLC-fz-ycz">
             <objects>
-                <navigationController navigationBarHidden="YES" id="y0u-lQ-G0g" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="y0u-lQ-G0g" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="Hvm-xr-RFm">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eud-S3-lze">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -109,10 +117,11 @@
         <!--Profile-->
         <scene sceneID="ioq-7W-TYH">
             <objects>
-                <navigationController navigationBarHidden="YES" id="3cN-MI-T72" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="3cN-MI-T72" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" selectedImage="person.fill" id="06S-0Z-BC3">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="n87-Av-Fvb">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

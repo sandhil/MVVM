@@ -24,7 +24,9 @@ class SignInViewController: UIViewController {
     private func navigateToHomeScreen() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let tabbarController = storyboard.instantiateViewController(withIdentifier: "TabbarController") as! TabbarController
-        self.navigationController?.pushViewController(tabbarController, animated: false)
+        tabbarController.modalPresentationStyle = .fullScreen
+        tabbarController.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.present(tabbarController, animated: false)
     }
 }
 
